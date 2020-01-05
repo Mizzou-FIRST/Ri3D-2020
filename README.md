@@ -2,10 +2,16 @@
 
 ## CAN Config
 
-| Device Name | ID  |
-| ----------- | --- |
-| Fly_Motor_R | 0   |
-| Fly_Motor_L | 1   |
+| Device Name  | ID  |
+| ------------ | --- |
+| PDB          | 1   |
+| PCM          | 2   |
+| Fly_Motor_R  | 3   |
+| Fly_Motor_L  | 4   |
+| Lift_Motor_M | 5   |
+| Lift_Motor_S | 6   |
+| ExtraTalon   | 7   |
+| ExtraVictor  | 8   |
 
 ## I/O
 
@@ -15,21 +21,27 @@
 | Sparkx Rear Right  | PWM 1 |
 | Sparkx Front Left  | PWM 2 |
 | Sparkx Front Right | PWM 3 |
-| Sparkx Intake      | PWM4  |
+| Sparkx Intake      | PWM 4 |
+
+## asdf
+
+2 talons fly wheels
+1 talon/1 victor lift
 
 ## TypeDefs
 
 ### typedef_enum_refnums
 
-| Name          | Number |
-| ------------- | ------ |
-| Joy_L         | 0      |
-| Joy_R         | 1      |
-| Drive_Motors  | 2      |
-| Lift_Motors   | 3      |
-| Intake_Motors | 4      |
-| Fly_Motor_R   | 5      |
-| Fly_Motor_L   | 6      |
+| Name         | Number |
+| ------------ | ------ |
+| Joy_L        | 0      |
+| Joy_R        | 1      |
+| Drive_Motors | 2      |
+| Lift_Motor_M | 3      |
+| Lift_Motor_S | 4      |
+| Intake_Motor | 5      |
+| Fly_Motor_R  | 6      |
+| Fly_Motor_L  | 7      |
 
 ### typedef_enum_Begin_State
 
