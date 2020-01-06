@@ -60,11 +60,17 @@ Begin state machine
 
 Teleop state machine
 
-| Name        | Number |
-| ----------- | ------ |
-| Read Joy    | 0      |
-| Calc Drive  | 1      |
-| Write Drive | 2      |
+| Name         | Number |
+| ------------ | ------ |
+| Read Joy     | 0      |
+| Calc Drive   | 1      |
+| Calc Intake  | 2      |
+| Calc Lift    | 3      |
+| Calc Fly     | 4      |
+| Write Drive  | 5      |
+| Write Intake | 6      |
+| Write Lift   | 7      |
+| Write Fly    | 8      |
 
 ### typedef_cluster_Teleop_Local_Data
 
@@ -74,6 +80,9 @@ Teleop state machine
 | JoyStick_R    | typedef_cluster_Joystick | Input  |
 | Drive_Forward | Double                   | Output |
 | Drive_Twist   | Double                   | Output |
+| Intake        | Double                   | Output |
+| Lift          | Double                   | Output |
+| Fly_SP        | Double                   | Output |
 
 ### typedef_cluster_Joystick
 
