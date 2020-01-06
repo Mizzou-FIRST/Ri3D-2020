@@ -1,5 +1,24 @@
 # Mizzou FIRST Ri3D 2020
 
+## Controls
+
+Joysticks used are Logitec 3D Pros
+
+### Joystick Right - Drive
+
+| Input           | Function       |
+| --------------- | -------------- |
+| Y Axis Forward  | Drive forward  |
+| Y Axis Backward | Drive backward |
+| Z Axis Left     | Turn left      |
+| Z Axis Right    | Turn right     |
+
+### Joystick Left - Actuators
+
+| Input | Function |
+| ----- | -------- |
+
+
 ## CAN Config
 
 | Device Name   | ID  |
@@ -22,11 +41,6 @@
 | Sparkx Front Right | PWM 2 |
 | Sparkx Rear Right  | PWM 3 |
 | Sparkx Intake      | PWM 4 |
-
-## asdf
-
-2 talons fly wheels
-1 talon/1 victor lift
 
 ## TypeDefs
 
