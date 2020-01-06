@@ -79,11 +79,11 @@ Teleop state machine
 | Read Joy     | 0      |
 | Calc Drive   | 1      |
 | Calc Intake  | 2      |
-| Calc Lift    | 3      |
+| Calc Climb   | 3      |
 | Calc Fly     | 4      |
 | Write Drive  | 5      |
 | Write Intake | 6      |
-| Write Lift   | 7      |
+| Write Climb  | 7      |
 | Write Fly    | 8      |
 
 ### typedef_cluster_Teleop_Local_Data
@@ -95,7 +95,7 @@ Teleop state machine
 | Drive_Forward | Double                   | Output |
 | Drive_Twist   | Double                   | Output |
 | Intake        | Double                   | Output |
-| Lift          | Double                   | Output |
+| Climb         | Double                   | Output |
 | Fly_SP        | Double                   | Output |
 
 ### typedef_cluster_Joystick
