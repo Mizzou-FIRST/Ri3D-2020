@@ -1,5 +1,9 @@
 # Mizzou FIRST Ri3D 2020
 
+Rio DNS: roboRIO-3792-FRC.local
+
+Rio IP: 10.37.92.2
+
 ## Adam's Sleepy Checklist
 
 - Fix CAN
@@ -40,8 +44,9 @@ Joysticks used are Logitec 3D Pros
 | Fly_Motor_L   | 4   |
 | Winch_Motor_M | 5   |
 | Winch_Motor_S | 6   |
-| ExtraTalon    | 7   |
-| ExtraVictor   | 8   |
+| Erector       | 7   |
+| Fortune       | 8   |
+| CrabWalk      | 9   |
 
 ## I/O
 
