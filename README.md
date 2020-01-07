@@ -27,8 +27,8 @@ Joysticks used are Logitec 3D Pros
 | PCM           | 2   |
 | Fly_Motor_R   | 3   |
 | Fly_Motor_L   | 4   |
-| Climb_Motor_M | 5   |
-| Climb_Motor_S | 6   |
+| Winch_Motor_M | 5   |
+| Winch_Motor_S | 6   |
 | ExtraTalon    | 7   |
 | ExtraVictor   | 8   |
 
@@ -46,57 +46,80 @@ Joysticks used are Logitec 3D Pros
 
 ### typedef_enum_refnums
 
-| Name          | Number |
-| ------------- | ------ |
-| Joy_L         | 0      |
-| Joy_R         | 1      |
-| Drive_Motors  | 2      |
-| Climb_Motor_M | 3      |
-| Climb_Motor_S | 4      |
-| Intake_Motor  | 5      |
-| Fly_Motor_R   | 6      |
-| Fly_Motor_L   | 7      |
+| Name             | Number |
+| ---------------- | ------ |
+| Joy_L            | 0      |
+| Joy_R            | 1      |
+| Drive_Motors     | 2      |
+| Drive_Encoders_R | 3      |
+| Drive_Encoders_L | 4      |
+| Winch_Motor_M    | 5      |
+| Winch_Motor_S    | 6      |
+| Erector_Motor    | 7      |
+| Slider_Motor     | 8      |
+| Intake_Motor     | 9      |
+| Fly_Motor_R      | 10     |
+| Fly_Motor_L      | 11     |
+| Fortune_Motor    | 12     |
 
 ### typedef_enum_Begin_State
 
 Begin state machine
 
-| Name         | Number |
-| ------------ | ------ |
-| Joy_Setup    | 0      |
-| Drive_Setup  | 1      |
-| Climb_Setup  | 2      |
-| Intake_Setup | 3      |
-| Fly_Setup    | 4      |
-| Stop         | 5      |
+| Name             | Number |
+| ---------------- | ------ |
+| Joy_Setup        | 0      |
+| Drive_Setup      | 1      |
+| Encoder_Setup    | 2      |
+| Winch_Setup      | 3      |
+| Erector_Setup    | 4      |
+| Slider_Setup     | 5      |
+| Intake_Setup     | 6      |
+| Fly_Setup        | 7      |
+| Fortune_Setup    | 8      |
+| Compressor_Setup | 9      |
+| Stop             | 10     |
 
 ### typedef_enum_Teleop_State
 
 Teleop state machine
 
-| Name         | Number |
-| ------------ | ------ |
-| Read Joy     | 0      |
-| Calc Drive   | 1      |
-| Calc Intake  | 2      |
-| Calc Climb   | 3      |
-| Calc Fly     | 4      |
-| Write Drive  | 5      |
-| Write Intake | 6      |
-| Write Climb  | 7      |
-| Write Fly    | 8      |
+| Name          | Number |
+| ------------- | ------ |
+| Read_Joy      | 0      |
+| Read_Encoders | 1      |
+| Calc_Drive    | 1      |
+| Calc_Intake   | 2      |
+| Calc_Fly      | 3      |
+| Calc_Winch    | 4      |
+| Calc_Erector  | 5      |
+| Calc_Slider   | 6      |
+| Calc_Fortune  | 7      |
+| Write_Drive   | 8      |
+| Write_Intake  | 9      |
+| Write_Fly     | 10     |
+| Write_Winch   | 11     |
+| Write_Erector | 12     |
+| Write_Slider  | 13     |
+| Write_Fortune | 14     |
+| Stop          | 15     |
 
 ### typedef_cluster_Teleop_Local_Data
 
-| Name          | Type                     | I/O    |
-| ------------- | ------------------------ | ------ |
-| JoyStick_L    | typedef_cluster_Joystick | Input  |
-| JoyStick_R    | typedef_cluster_Joystick | Input  |
-| Drive_Forward | Double                   | Output |
-| Drive_Twist   | Double                   | Output |
-| Intake        | Double                   | Output |
-| Climb         | Double                   | Output |
-| Fly_SP        | Double                   | Output |
+| Name            | Type                     | I/O    |
+| --------------- | ------------------------ | ------ |
+| JoyStick_L      | typedef_cluster_Joystick | Input  |
+| JoyStick_R      | typedef_cluster_Joystick | Input  |
+| Drive_Encoder_L | Double                   | Input  |
+| Drive_Encoder_R | Double                   | Input  |
+| Drive_Forward   | Double                   | Output |
+| Drive_Twist     | Double                   | Output |
+| Intake_PWR      | Double                   | Output |
+| Fly_SP          | Double                   | Output |
+| Winch_SP        | Double                   | Output |
+| Erector_SP      | Double                   | Output |
+| Slider_PWR      | Double                   | Output |
+| Fortune_SP      | Double                   | Output |
 
 ### typedef_cluster_Joystick
 
