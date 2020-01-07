@@ -1,5 +1,16 @@
 # Mizzou FIRST Ri3D 2020
 
+## Adam's Sleepy Checklist
+
+- Fix CAN
+  - Add Motor Controller
+  - Validate IDs
+  - Fix Begin
+- Drink Water
+- Setup Drive
+- Setup Intake
+- Setup Err
+
 ## Controls
 
 Joysticks used are Logitec 3D Pros
@@ -15,9 +26,9 @@ Joysticks used are Logitec 3D Pros
 
 ### Joystick Left - Actuators
 
-| Input | Function |
-| ----- | -------- |
-
+| Input   | Function     |
+| ------- | ------------ |
+| Trigger | Intake Motor |
 
 ## CAN Config
 
